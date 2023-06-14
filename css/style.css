@@ -7,7 +7,7 @@ body {
 header {
     background: linear-gradient(rgb(0, 162, 255), rgb(0, 76, 190));
     text-align: center;
-    padding: 5rem 0;
+    padding: 3rem 0;
     color: white;
 }
 
@@ -33,7 +33,80 @@ header a:visited {
     color: white;
 }
 
+section {
+    margin-bottom: 3rem !important;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section h2 {
+    line-height: 1.2;
+    font-weight: 500;
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+
+section h3 {
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin-bottom: 0;
+}
+
+section p {
+    font-weight: 300;
+    margin: 0;
+    font-size: 1rem;
+}
+
+/* min-width 1200px */
+
+@media (min-width: 1200px) {
+    section {
+        max-width: 1140px;
+    }
+}
+
+@media (min-width: 900px) {
+    section {
+        padding: 0 2rem;
+    }
+}
+
+@media (max-width: 900px) {
+    section {
+        padding: 0 1rem;
+    }
+
+}
+
 footer {
     text-align: center;
     padding: 1rem 0;
+}
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cell {
+    flex: 0 0 50%;
+}
+
+ul {
+    font-weight: 300;
+}
+
+a {
+    text-decoration: none;
+    color: cornflowerblue;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:visited {
+    color: dodgerblue;
 }
