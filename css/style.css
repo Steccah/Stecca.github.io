@@ -110,3 +110,18 @@ a:hover {
 a:visited {
     color: dodgerblue;
 }
+
+.meter {
+    background: lightgray;
+    border-radius: 25px;
+    height: 20px;
+}
+
+.meter>span {
+    background-color: dodgerblue;
+    border-radius: 20px 10px 10px 20px;
+    display: block;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
