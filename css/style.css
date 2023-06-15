@@ -90,6 +90,16 @@ footer {
     flex-wrap: wrap;
 }
 
+.row>.img>img {
+    height: 5rem;
+    margin-top: 30px;
+}
+
+.row>.paragraph {
+    flex: 1;
+    padding-left: 1rem;
+}
+
 .cell {
     flex: 0 0 50%;
 }
