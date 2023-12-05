@@ -11,6 +11,11 @@ header {
     color: white;
 }
 
+header img {
+    height: 15rem;
+    border-radius: 0.5rem;
+}
+
 header h1 {
     font-size: 3rem;
     margin-bottom: 0.5rem;
