@@ -1,4 +1,5 @@
-/* root variables */
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Mega&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@200&display=swap');
 
 :root {
     --bg-color: #f5f5f5;
@@ -13,13 +14,13 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Public Sans', sans-serif;
     line-height: 1.6;
     margin: 0;
 }
 
 header {
-    font-family: Proza Libre, sans-serif;
+    font-family: 'Lexend Mega', sans-serif;
     border: 3px solid #000000;
     display: flex;
     height: 85vh;
@@ -43,6 +44,7 @@ header .avatar {
 header h1 {
     font-size: 3rem;
     margin-bottom: 0.5rem;
+    font-family: 'Lexend Mega', sans-serif;
 }
 
 header p {
@@ -73,20 +75,20 @@ section h2 {
     font-weight: 500;
     font-size: 2rem;
     margin-bottom: 0;
-
     border: 3px solid #000000;
     border-radius: 1.5rem;
-    /* shadow */
     box-shadow: -3px 3px 0px #000000;
     padding: 1rem;
     background-color: #FADF0C;
     margin-top: 3rem;
+    font-family: 'Lexend Mega', sans-serif;
 }
 
 section h3 {
     font-weight: 500;
     font-size: 1.5rem;
     margin-bottom: 0;
+    font-family: 'Lexend Mega', sans-serif;
 }
 
 .card h3 {
