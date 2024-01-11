@@ -740,12 +740,12 @@ html {
 .card a {
   margin: 0;
   text-decoration: none;
-  color: inherit
 }
 
 .card-thumbnail img {
-  width: 100%;
-  height: auto
+  height: 5rem;
+  margin: 1rem;
+  /* border-radius: 1rem; */
 }
 
 .card-content {
@@ -1091,7 +1091,7 @@ input.nb-checkbox:checked::before {
 }
 
 .bg-pale-violet {
-  background-color: #bc98cb
+  background-color: #E3E0F3
 }
 
 .bg-soft-blue {
@@ -1104,6 +1104,18 @@ input.nb-checkbox:checked::before {
 
 .bg-pale-yellow {
   background-color: #fdfd96
+}
+
+.bg-pale-green {
+  background-color: #aff7ba
+}
+
+.bg-pale-orange {
+  background-color: #F7D6B4
+}
+
+.bg-pale-fuchsia {
+  background-color: #FBDFFF
 }
 
 .bg-white {
