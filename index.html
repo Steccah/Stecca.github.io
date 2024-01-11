@@ -20,6 +20,7 @@
   <meta property="og:locale" content="en_US" />
   <meta property="og:type" content="website" />
 
+  <link rel="stylesheet" href="css/neobrutalismcss@latest.css" />
   <link rel="stylesheet" href="css/style.css" />
   <link rel="icon" href="img/icon.ico" />
   <script async src="https://analytics.umami.is/script.js"
@@ -27,71 +28,174 @@
 </head>
 
 <body>
+
   <header>
-    <img src="img/avatar.png" alt="Avatar" />
+    <div class="avatar bg-pale-yellow">
+      <img src="img/avatar.png" alt="Avatar" />
+    </div>
     <h1>Andrea Stecca</h1>
     <p>
       <a data-umami-event="mail" href="mailto:me@stecca.dev">
-        me@stecca.dev
+        <button class="nb-button soft-blue rounded"> me@stecca.dev </button>
       </a>
     </p>
-    <p>
+    <div class="row">
       <a data-umami-event="linkedin" href="https://linkedin.com/in/steccah/">
-        LinkedIn
+        <button class="nb-button blue rounded"> LinkedIn </button>
       </a>
-      |
+
       <a data-umami-event="me.stecca.dev" href="https://me.stecca.dev">
-        Website
+        <button class="nb-button blue rounded"> Website </button>
       </a>
-      |
+
       <a data-umami-event="github" class="text-white" href="https://github.com/steccah">
-        GitHub
+        <button class="nb-button blue rounded"> GitHub </button>
       </a>
-      |
+
       <a data-umami-event="telegram" href="https://t.me/steccah">
-        Telegram
+        <button class="nb-button blue rounded"> Telegram </button>
       </a>
-    </p>
+    </div>
   </header>
 
   <section>
     <h2>Education</h2>
-    <div>
-      <h3>IT Technician Degree</h3>
-      <p>ITTS Vito Volterra, VE | 2015 - 2020</p>
-    </div>
-    <div>
-      <h3>BSc: Computer Science</h3>
-      <p>University of Padua, PD | 2020 - current</p>
-    </div>
+    <div class="row">
+      <div class="card">
+        <div class="card-content">
+          <div class="text-small">2015 - 2020</div>
+          <h3>IT Technician degree</h3>
+          <p>ITTS Vito Volterra, VE</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-content">
+          <div class="text-small">2020 - current</div>
+          <h3>BSc: Computer Science</h3>
+          <p>University of Padua, PD</p>
+        </div>
+      </div>
   </section>
 
   <section>
     <h2>Skills & Abilities</h2>
     <div class="row">
-      <div class="cell">
-        <h3>Front-End</h3>
-        <p>JavaScript, HTML5, CSS3</p>
+      <div class="card">
+        <div class="card-content">
+          <h3>Front-End</h3>
+          <div class="row">
+            <div class="badge bg-pale-yellow ">
+              <div class="badge-inner">
+                <p class="badge-text">JavaScript</p>
+              </div>
+            </div>
+            <div class="badge bg-orange">
+              <div class="badge-inner">
+                <p class="badge-text">HTML5</p>
+              </div>
+            </div>
+            <div class="badge bg-soft-blue">
+              <div class="badge-inner">
+                <p class="badge-text">CSS3</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="cell">
-        <h3>Back-End</h3>
-        <p>Node.js, PHP</p>
+      <div class="card">
+        <div class="card-content">
+          <h3>Back-End</h3>
+          <div class="row">
+            <div class="badge bg-green">
+              <div class="badge-inner">
+                <p class="badge-text">Node.js</p>
+              </div>
+            </div>
+            <div class="badge bg-pale-cyan">
+              <div class="badge-inner">
+                <p class="badge-text">PHP</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="cell">
-        <h3>Lower-level</h3>
-        <p>C++, C, Rust</p>
+      <div class="card">
+        <div class="card-content">
+          <h3>Lower-level</h3>
+          <div class="row">
+            <div class="badge bg-blue">
+              <div class="badge-inner">
+                <p class="badge-text text-white">C++</p>
+              </div>
+            </div>
+            <div class="badge bg-blue">
+              <div class="badge-inner">
+                <p class="badge-text text-white">C</p>
+              </div>
+            </div>
+            <div class="badge bg-orange">
+              <div class="badge-inner">
+                <p class="badge-text">Rust</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="cell">
-        <h3>Data</h3>
-        <p>MySQL, PostgreSQL, GraphQL</p>
+      <div class="card">
+        <div class="card-content">
+          <h3>Data</h3>
+          <div class="row">
+            <div class="badge bg-orange">
+              <div class="badge-inner">
+                <p class="badge-text">MySQL</p>
+              </div>
+            </div>
+            <div class="badge bg-blue">
+              <div class="badge-inner">
+                <p class="badge-text text-white">PostgreSQL</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="cell">
-        <h3>Frameworks</h3>
-        <p>Flutter, Express</p>
+      <div class="card">
+        <div class="card-content">
+          <h3>Frameworks</h3>
+          <div class="row">
+            <div class="badge bg-blue">
+              <div class="badge-inner">
+                <p class="badge-text text-white">Flutter</p>
+              </div>
+            </div>
+            <div class="badge bg-green">
+              <div class="badge-inner">
+                <p class="badge-text">Express</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="cell">
-        <h3>Other</h3>
-        <p>Git, Linux, Docker, CI/CD</p>
+      <div class="card">
+        <div class="card-content">
+          <h3>Other</h3>
+          <div class="row">
+            <div class="badge bg-orange">
+              <div class="badge-inner">
+                <p class="badge-text">Git</p>
+              </div>
+            </div>
+            <div class="badge bg-blue">
+              <div class="badge-inner">
+                <p class="badge-text text-white">Docker</p>
+              </div>
+            </div>
+            <div class="badge bg-white">
+              <div class="badge-inner">
+                <p class="badge-text">Linux</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -99,57 +203,70 @@
   <section>
     <h2>Experience</h2>
     <div>
-      <div>
-        <h3>IT Professor</h3>
-        <p>I.S.I.S.S. Antonio Scarpa | 11/2023 - current</p>
-        <p>I teach IT to students in their final year of the scientific high school applied sciences, as well as to
-          students in the last two years of the IT Technician course.</p>
+      <div class="card">
+        <div class="card-content">
+          <div class="text-small">01/2023 - current</div>
+          <h3>IT Professor</h3>
+          <p class="label">I.S.I.S.S. Antonio Scarpa</p>
+          <p>I teach IT to students in their final year of the scientific high school applied sciences, as well as to
+            students in the last two years of the IT Technician course.</p>
+        </div>
       </div>
-      <h3>Firmware developer internship</h3>
-      <p>TEXA S.p.A. | 10/2023 - 12/2023</p>
-      <p>Implementing an mTLS server with elliptic curve cryptography on an embedded device.</p>
-      <ul>
-        <li>C, C++, C#</li>
-        <li>Embedded systems</li>
-        <li>Linux</li>
-        <li>Git</li>
-        <li>WolfSSL</li>
-      </ul>
-    </div>
-    <div>
-      <h3>Senior Delivery Driver & Delivery Manager</h3>
-      <p>Pizza Express di Cusan Catia | 06/2021 - 11/2023 ➡️ Pomodoro & Basilico S.r.l.s. | 12/2023 - Current</p>
-      <p>I possess a strong track record of successfully managing and coordinating the timely delivery of goods while
-        ensuring customer service. My expertise in route planning, inventory management, and team leadership has enabled
-        me to consistently hit performance targets and drive operational efficiency
-      </p>
-      <ul>
-        <li>Managing the delivery team</li>
-        <li>Planning the delivery routes</li>
-        <li>Managing the orders</li>
-        <li>Managing the end customer service</li>
-      </ul>
-    </div>
-    <div>
-      <h3>Landscape Gardener</h3>
-      <p>Ristorante ai Sette Nani | 2019 - 2021</p>
-      <ul>
-        <li>Taking care of the plants (pruning, fertilizing, watering)</li>
-        <li>Planting flowers, plants and trees</li>
-        <li>Cutting the grass and the hedge</li>
-        <li>Cleanin the lawn from dry leaves</li>
-        <li>Feeding the fishes and keeping the tanks clean</li>
-        <li>Setting the tables outdoors</li>
-      </ul>
-    </div>
-    <div>
-      <h3>IT Assistant (Stage)</h3>
-      <p>DBA | 06/2018 - 07/2018</p>
-      <ul>
-        <li>Hard drive backups</li>
-        <li>On-site router/switch/computer installation</li>
-        <li>Maintenance of computers and printers</li>
-      </ul>
+      <div class="card">
+        <div class="card-content">
+          <div class="text-small">10/2023 - 12/2023</div>
+          <h3>Firmware developer internship</h3>
+          <p class="label">TEXA S.p.A.</p>
+          <p>Implementing an mTLS server with elliptic curve cryptography on an embedded device.</p>
+          <ul>
+            <li>C, C++, C#</li>
+            <li>Embedded systems</li>
+            <li>Linux</li>
+            <li>Git</li>
+            <li>WolfSSL</li>
+          </ul>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-content">
+          <div class="text-small">06/2021 - current</div>
+          <h3>Senior Delivery Driver & Delivery Manager</h3>
+          <p class="label">Pomodoro & Basilico S.r.l.s.</p>
+          <p>I possess a strong track record of successfully managing and coordinating the timely delivery of goods
+            while
+            ensuring customer service. My expertise in route planning, inventory management, and team leadership has
+            enabled
+            me to consistently hit performance targets and drive operational efficiency
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-content">
+          <div class="text-small">2019 - 2021</div>
+          <h3>Landscape Gardener</h3>
+          <p class="label">Ristorante ai Sette Nani</p>
+          <ul>
+            <li>Taking care of the plants (pruning, fertilizing, watering)</li>
+            <li>Planting flowers, plants and trees</li>
+            <li>Cutting the grass and the hedge</li>
+            <li>Cleanin the lawn from dry leaves</li>
+            <li>Feeding the fishes and keeping the tanks clean</li>
+            <li>Setting the tables outdoors</li>
+          </ul>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-content">
+          <div class="text-small">06/2018 - 07/2018</div>
+          <h3>IT Assistant (Stage)</h3>
+          <p class="label">DBA</p>
+          <ul>
+            <li>Hard drive backups</li>
+            <li>On-site router/switch/computer installation</li>
+            <li>Maintenance of computers and printers</li>
+          </ul>
+        </div>
+      </div>
     </div>
   </section>
 
