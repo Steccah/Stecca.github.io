@@ -1,0 +1,71 @@
+* {
+    color: #000 !important;
+    text-shadow: none !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    text-align: left !important;
+    text-indent: 0 !important;
+    text-transform: none !important;
+    letter-spacing: normal !important;
+    word-spacing: normal !important;
+    /* font-size: 12pt !important; */
+    font-family: 'Times New Roman', Times, serif !important;
+    line-height: 1.5 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+}
+
+a {
+    color: #000 !important;
+    text-decoration: none !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    page-break-after: avoid;
+}
+
+.card-thumbnail {
+    margin: 0 10px 0 0 !important;
+}
+
+.nb-button {
+    display: none !important;
+}
+
+header {
+    /* page-break-after: always; */
+    height: auto;
+    margin-bottom: 300px !important;
+}
+
+.nb-button.soft-blue.rounded {
+    display: block !important;
+}
+
+#certifications,
+#volunteering {
+    page-break-before: always;
+}
+
+.badge {
+    display: none !important;
+}
+
+#skills .badge {
+    display: block !important;
+}
+
+#skills .card-content .row {
+    display: block !important;
+}
+
+
+img [width="32"] {
+    display: none !important;
+}
