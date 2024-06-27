@@ -30,7 +30,7 @@ header {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 0 10%;
+    padding: 2% 10%;
     margin: 0 10%;
     margin-top: 3rem;
 }
@@ -122,6 +122,10 @@ section p {
     section {
         padding: 0 1rem;
     }
+
+    .mobile-hide {
+        display: none;
+    }
 }
 
 footer {
@@ -205,8 +209,4 @@ a {
         width: 70px;
         height: 70px;
     }
-}
-
-.mobile-hide {
-    display: none;
 }
