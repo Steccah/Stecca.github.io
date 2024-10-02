@@ -17,23 +17,21 @@ body {
     font-family: 'Hack', sans-serif;
     line-height: 1.6;
     margin: 0;
+    /* position: relative; */
 }
 
 header {
     font-family: 'Lexend Mega', sans-serif;
-    border: 3px solid #000000;
     display: flex;
-    /* height: 85vh; */
     height: fit-content;
-    border-radius: 1.5rem;
-    background-color: #ffc0cb;
+    border-radius: 0 0 2.5rem 2.5rem;
+    background-color: #0077b6;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 2% 10%;
-    margin: 0 10%;
-    margin-top: 3rem;
+    padding: 6% 10%;
     min-height: 85vh;
+    color: white;
 }
 
 header .avatar {
@@ -52,19 +50,6 @@ header h1 {
 
 header p {
     font-size: 1.5rem;
-}
-
-header a {
-    text-decoration: none;
-    color: white;
-}
-
-header a:hover {
-    text-decoration: underline;
-}
-
-header a:visited {
-    color: white;
 }
 
 section {
@@ -164,6 +149,10 @@ a {
     color: black;
 }
 
+a:hover {
+    text-decoration: none;
+}
+
 .meter {
     background: lightgray;
     border-radius: 25px;
@@ -195,6 +184,38 @@ a {
     z-index: 2;
 }
 
+.scrolling-bar {
+    width: 100vw;
+    background-color: #f8f8f8;
+    white-space: nowrap;
+    position: absolute;
+    top: 0;
+}
+
+.scrolling-content {
+    display: inline-block;
+    animation: scroll-left 15s linear infinite;
+}
+
+.scrolling-content span {
+    display: inline-block;
+    padding: 0 50px;
+    font-size: 24px;
+    color: #333;
+}
+
+.paperOverlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-repeat: repeat;
+    background-image: url('/img/texture.jpg');
+    mix-blend-mode: multiply;
+    pointer-events: none;
+}
+
 @keyframes flash {
     0% {
         width: 70px;
@@ -209,5 +230,15 @@ a {
     100% {
         width: 70px;
         height: 70px;
+    }
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
     }
 }

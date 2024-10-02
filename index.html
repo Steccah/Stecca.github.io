@@ -22,7 +22,6 @@
 
   <link rel="stylesheet" href="css/neobrutalism.css" />
   <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="css/moving.css">
   <link rel="stylesheet" href="css/print.css" media="print">
   <link rel="icon" href="img/icon.ico" />
   <script defer src="https://t.stecca.dev/script.js" data-website-id="d88d1b6f-8af6-47e6-82dc-83c1d153502b"></script>
@@ -31,7 +30,25 @@
 <body>
 
   <header>
-    <div class="avatar bg-blue">
+    <!-- marquee -->
+    <div class="scrolling-bar">
+      <div class="scrolling-content">
+        <span>Cybersecurity</span>
+        <span>Backend</span>
+        <span>Frontend</span>
+        <span>Database</span>
+        <span>Linux</span>
+        <span>Open Source</span>
+        <!-- Trick lol -->
+        <span>Cybersecurity</span>
+        <span>Backend</span>
+        <span>Frontend</span>
+        <span>Database</span>
+        <span>Linux</span>
+        <span>Open Source</span>
+      </div>
+    </div>
+    <div class="avatar">
       <img src="img/avatar.png" alt="Avatar" />
     </div>
     <h1>Andrea Stecca</h1>
@@ -50,15 +67,15 @@
       </p>
     </section>
     <p>
-      <a data-umami-event="mail" href="mailto:me@stecca.dev" class="nb-button soft-blue rounded"> me@stecca.dev </a>
+      <a data-umami-event="mail" href="mailto:me@stecca.dev" class="nb-button"> me@stecca.dev </a>
     </p>
     <div class="row">
-      <a data-umami-event="linkedin" href="https://linkedin.com/in/steccah/" class="nb-button blue rounded"> LinkedIn
+      <a data-umami-event="linkedin" href="https://linkedin.com/in/steccah/" class="nb-button"> LinkedIn
       </a>
 
-      <a data-umami-event="github" href="https://github.com/steccah" class="nb-button blue rounded"> GitHub </a>
+      <a data-umami-event="github" href="https://github.com/steccah" class="nb-button"> GitHub </a>
 
-      <a data-umami-event="telegram" href="https://t.me/steccah" class="nb-button blue rounded"> Telegram </a>
+      <a data-umami-event="telegram" href="https://t.me/steccah" class="nb-button"> Telegram </a>
     </div>
   </header>
 
@@ -73,7 +90,7 @@
         </div>
       </div>
       <div>
-        <div class="new"></div>
+        <!-- <div class="new"></div> -->
         <a href="https://bestr.it/award/show/OFyHevmDS3SJnMLlcEwQmA">
           <div class="card bg-pale-violet">
             <div class="card-content">
@@ -872,27 +889,7 @@
     <p>&copy; 2024 Stecca. All Rights Reserved.</p>
   </footer>
 
-  <div id="rotating-section">
-    <div id="rotating-animation">
-      <div>
-        <div class="rect1"></div>
-        <div class="rect2"></div>
-        <div class="rect3"></div>
-        <div class="rect4"></div>
-        <div class="rect5"></div>
-        <div class="rect6"></div>
-        <div class="rect7"></div>
-        <div class="rect8"></div>
-        <div class="rect9"></div>
-        <div class="rect10"></div>
-        <div class="rect11"></div>
-        <div class="rect12"></div>
-        <div class="rect13"></div>
-        <div class="rect14"></div>
-        <div class="rect15"></div>
-      </div>
-    </div>
-  </div>
+  <div class="paperOverlay"></div>
 </body>
 
 </html>
