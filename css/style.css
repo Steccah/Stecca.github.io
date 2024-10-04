@@ -14,14 +14,14 @@
 }
 
 body {
-    font-family: 'Hack', sans-serif;
+    font-family: 'Hack', monospace;
     line-height: 1.6;
     margin: 0;
-    /* position: relative; */
+    position: relative;
 }
 
 header {
-    font-family: 'Lexend Mega', sans-serif;
+    font-family: 'Lexend Mega', monospace;
     display: flex;
     height: fit-content;
     border-radius: 0 0 2.5rem 2.5rem;
@@ -44,75 +44,11 @@ header .avatar {
 header h1 {
     font-size: 3rem;
     margin-bottom: 0.5rem;
-    font-family: 'Lexend Mega', sans-serif;
+    font-family: 'Lexend Mega', monospace;
     text-align: center;
 }
 
-header p {
-    font-size: 1.5rem;
-}
 
-section {
-    margin-bottom: 3rem !important;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-section h2 {
-    line-height: 1.2;
-    font-weight: 500;
-    font-size: 2rem;
-    margin-bottom: 0;
-    border: 3px solid #000000;
-    border-radius: 1.5rem;
-    box-shadow: -3px 3px 0px #000000;
-    padding: 1rem;
-    background-color: #FADF0C;
-    margin-top: 3rem;
-    font-family: 'Lexend Mega', sans-serif;
-    text-align: center;
-}
-
-section h3 {
-    font-weight: 500;
-    font-size: 1.5rem;
-    margin-bottom: 0;
-    font-family: 'Lexend Mega', sans-serif;
-}
-
-.card h3 {
-    margin: auto;
-}
-
-section p {
-    font-weight: 300;
-    margin: 0;
-    font-size: 1rem;
-}
-
-/* min-width 1200px */
-
-@media (min-width: 1200px) {
-    section {
-        max-width: 1140px;
-    }
-}
-
-@media (min-width: 900px) {
-    section {
-        padding: 0 2rem;
-    }
-}
-
-@media (max-width: 900px) {
-    section {
-        padding: 0 1rem;
-    }
-
-    .mobile-hide {
-        display: none;
-    }
-}
 
 footer {
     text-align: center;
@@ -153,22 +89,6 @@ a:hover {
     text-decoration: none;
 }
 
-.meter {
-    background: lightgray;
-    border-radius: 25px;
-    height: 20px;
-    box-shadow: -4px 4px 0px #000000;
-}
-
-.meter>span {
-    background-color: #FF4910;
-    border-radius: 20px 20px 20px 20px;
-    display: block;
-    height: 100%;
-    overflow: visible;
-    position: relative;
-}
-
 .label {
     font-family: 'Courier New', Courier, monospace;
     font-weight: 800;
@@ -190,6 +110,7 @@ a:hover {
     white-space: nowrap;
     position: absolute;
     top: 0;
+    overflow: hidden;
 }
 
 .scrolling-content {
@@ -214,6 +135,10 @@ a:hover {
     background-image: url('/img/texture.jpg');
     mix-blend-mode: multiply;
     pointer-events: none;
+}
+
+section .row {
+    padding: 0 2rem;
 }
 
 @keyframes flash {
