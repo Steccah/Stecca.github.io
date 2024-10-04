@@ -226,6 +226,7 @@ section p {
     color: #031926;
     font-family: 'Hack', monospace;
     padding: 10px 5px;
+    margin: .2rem;
 }
 
 .meter {
